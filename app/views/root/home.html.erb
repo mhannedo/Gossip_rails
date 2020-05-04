@@ -1,0 +1,13 @@
+<h1>Welcome to Mario Kart</h1>
+
+<% Gossip.all.each do |gossip| %>
+<ul> Le gossip numéro <%= gossip.id %> : 
+    <li><%= gossip.user.first_name %></li>
+    <li><%= gossip.title %></li>
+    <li> <%= link_to "Lien vers la page du gossip", gossip_page_show_path%>  </li>
+
+ </ul> 
+ <% end %>
+
+
+

@@ -1,0 +1,15 @@
+<h1>Page du gossip </h1>
+
+<ul> Voici les informations du potin numero: <%= @gossip.id %> : 
+    <li> Le prénom :<%= @gossip.user.first_name %></li>
+    <li> Le nom: <%= @gossip.user.last_name %></li>
+    <li> <%= link_to "Lien vers la page de l'auteur", root_path %>  </li>
+    <li> Le title : <%= @gossip.title %></li>
+    <li> Le content <%= @gossip.content %></li>
+    <li> Le date de création <%= @gossip.created_at %></li>
+
+
+ </ul> 
+
+
+
